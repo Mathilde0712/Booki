@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+   
+    
 }
 
 :root {
@@ -14,6 +17,7 @@
 
 .fa-solid {
     color: var(--main-color);
+  
 }
 
 body {
@@ -75,7 +79,8 @@ nav{
 }
 
 nav a{
-    padding: 15px 50px;
+   margin-left: 50px; 
+   padding-top: 14px;
 }
 nav a:hover{
     color: var(--main-color) ;
@@ -86,26 +91,25 @@ nav a:hover{
 nav img{
     height: 19px;
     width: 61px;
-    padding: 30px 50px;
+    padding: 30px 0px;
 }
 /**** rechercher****/
 .rechercher .section-title{
     margin-right: 8px;
 }
-.rechercher p{
-    margin-bottom: 35px;
-}
 
+.rechercher p{
+    margin-top: 8px;
+}
 
 .filtres {
     font-weight: bold;
     display: flex;
     flex-direction: row;
+    margin-top: 35px;
+    align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin: 15px;
-    align-items: center;
-    
     display: flex;
     flex-direction: row;
     
@@ -115,6 +119,9 @@ nav img{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 35px;
+    width: 377px;
+    height: 49px;
  
 }
 
@@ -123,15 +130,16 @@ nav img{
     top: 0px;
     background-color: #0065fc;
     color: white;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-weight: 700;
+    font-size: 18px;
     border-radius: 0 15px 15px 0;
     border: none;
-    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 49px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .fa-magnifying-glass{
@@ -153,9 +161,8 @@ nav img{
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
-    /* width: 20px; */
-    height: 50px;
-    padding: 0 15px;
+    height: 49px;
+    padding: 0 19px;
     border-radius: 30% 0 0 30%;
     margin: 0;
   }
@@ -163,15 +170,16 @@ nav img{
  .text-seach {
     position: relative;
     top: 0;
-    width: 250px;
     border: 1px solid #d9d9d9;
     color: black;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-weight: 700;
+    font-size: 18px;
     text-align: center;
     margin-right: 0;
     margin-left: 0;
+    padding-right: 20px;
     height: 49px;
+    width: 195px;
   }
  
   .fa-location-dot{
@@ -195,7 +203,7 @@ nav img{
 .filtres a{
     border: 1px solid #D9D9D9;
     border-radius: 45px;
-    padding: 4px 19px;
+    padding: 15px 22px;
     gap:10px;
     align-items: center;
     height: 50px;
@@ -208,32 +216,36 @@ nav img{
 
 }
 
+.filtres .fa-solid{
+  margin-right: 10px;
+}
+
 .filtres .card-title{
     margin-right: 15px;
 }
 
 .info{
     display: flex;
-    padding-right: 15px;
+    margin-top: 35px;
+
 }
 
 .info p {
-    margin-top: 9px;
-    display: flex;
-    align-content: center;
+    margin-left: 10px;
+    margin-top: 0;
 }
 
+
+
 .fa-info {
-    /* display: flex; */
+    
     border: 1px solid #D9D9D9;
     border-radius: 50%;
     text-align: center;
-    width: 15px;
-    height: 15px;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8em;
-    margin: 10px;
+    width: 22px;
+    height: 22px;
+
+    
    
 }
 
@@ -260,7 +272,7 @@ nav img{
 }
 .hebergements-card img{
     width: 100%;
-   height: 124px;
+    height: 124px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;  
@@ -272,7 +284,7 @@ nav img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 33px; 
+    margin-top: 30px; 
   
    
 }
@@ -288,12 +300,13 @@ nav img{
 
 
 .hebergements-card .card-title{
-   margin-bottom: -11px;
-   margin-top: 8%;
+   margin-bottom: 8px;
+   margin-top: 8px;
     
 }
 .hebergements-cards .card-subtitle {
-    margin: 0;
+    margin-top: 8px;
+
 }
 
 .hebergements-card a{
@@ -302,9 +315,18 @@ nav img{
 
 
 .afficherplus{
-  margin-top: 30px;
-    font-weight: bold;
+margin-top: 30px;
+font-weight: 700;
+font-size: 18px;
 }
+
+.card-txt .card-subtitle{
+    margin-bottom:  8px; ;
+}
+ .card-txt .card-rating{
+    margin-bottom: 8px;
+ }
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -357,7 +379,7 @@ nav img{
 /***Activités***/
 
 .activities{
-    margin: -22px;
+    margin: 0;
     padding: 26px;
 }
 
@@ -382,7 +404,9 @@ nav img{
     padding: 0;
 }
 .activities-card .card-title{
-    padding: 20px 19px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 19px;
 }
 
 .activities .section-title{
@@ -469,7 +493,6 @@ footer a{
     }
 
     .activities{
-        width: 100%;
         margin-bottom: 30px;
         
     }
