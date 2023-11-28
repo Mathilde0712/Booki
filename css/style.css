@@ -287,6 +287,9 @@ nav img {
   padding: 0 15px 15px 15px;
   margin-top: 4px;
   white-space: nowrap;
+}
+
+.hebergements .card-title{
   overflow: hidden;
   text-overflow: ellipsis;
 }
